@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory</title>
+    <script src="https://kit.fontawesome.com/fa4c6fd86d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="default">
+        <div class="level-container">
+            <div class="title">LEVEL</div>
+            <div class="numbers">
+                    <span id="level">1</span><i class="try-again fa-solid fa-rotate-right"></i>
+            </div>
+        </div>  
+
+        <div class="moves-container">
+            <div class="title">MOVES</div>
+            <div class="numbers">
+                <span id="mov">0</span>/<span id="mov-total">20</span>
+            </div>
+        </div>
+
+        <div class="timer-container">
+            <div class="title">TIME</div>
+            <div class="numbers">
+                <span id="minutes">00</span>:<span id="seconds">00</span>
+            </div>
+        </div>
+    </header>
+   
+    <main>
+        <div id="table"></div>
+    </main>
+
+    <div class="start-screen">
+        <div class="leaves"></div>
+        <div class="start-card">
+            <div class="game-title">
+                <span class="game-title-one"></span><br>
+                <span class="game-title-two"></span><br>
+                <span class="game-title-three"></span>
+            </div>
+            <button class="start">START</button>  
+        </div>  
+    </div>
+
+    <div class="next-level-screen">
+        <div class="leaves"></div>
+        <div class="message-box">
+            <div>
+                <span class="message-title-next"> Oh yeah! </span><br>
+                Congratulations! you rock!
+            </div>
+            <button class="next-level-button">NEXT LEVEL</button>
+            <div class="try-again retry">Replay Level!</div>
+        </div>
+    </div>
+
+    <div class="time-is-up">
+        <div class="leaves"></div>
+        <div class="message-box">
+            <div>
+                <span class="message-title" > Oh no! </span><br>
+                Time is up!
+            </div>
+            <button class="try-again">TRY AGAIN</button>
+            <div class="retry go-start">Go to Start Screen</div>
+        </div>
+    </div>
+
+    <div class="moves-out">
+        <div class="leaves"></div>
+        <div class="message-box">
+            <div>
+                <span class="message-title" > Whoops! </span><br> 
+                You're out of moves!
+            </div>
+            <button class="try-again">TRY AGAIN</button> 
+            <div class="retry go-start">Go to Start Screen</div>
+        </div>
+    </div>
+
+    <div class="end-game">    
+        
+        <h2 class="story">
+            <span>¡Thank you for this year full of CHALLENGES, TRANSFORMATION AND GROWTH!</span>
+        </h2>
+       
+        <div class="retry go-start end-go-start">Go to Start Screen</div>
+    </div> 
+
+
+    <div class="game-over"> </div>
+
+    <audio
+    src="sound/error.wav"
+    class="sound"
+    id="sound-error"
+    preload="auto"
+    ></audio>
+
+    <audio
+    src="sound/flip.wav"
+    class="sound"
+    id="sound-flip"
+    preload="auto"
+    ></audio>
+
+    <audio
+    src="sound/success.wav"
+    class="sound"
+    id="sound-success"
+    preload="auto"
+    ></audio>
+
+    <audio
+    src="sound/levelup.wav"
+    class="sound"
+    id="sound-level-up"
+    preload="auto"
+    ></audio>
+
+    <audio
+    src="sound/levelfail.wav"
+    class="sound"
+    id="sound-level-fail"
+    preload="auto"
+    ></audio>
+
+    <audio
+    src="sound/win.mp3"
+    class="sound"
+    id="sound-win-game"
+    preload="auto"
+    ></audio>
+
+<script src="src/script.js"></script>
+</body>
+</html>
+
+    
